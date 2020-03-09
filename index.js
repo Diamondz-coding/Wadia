@@ -51,7 +51,9 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
 
                             
                             case "roll":
-                                var result = (Math.random() * 8)
+                            var numbers2 = ["You Rolled A 1", "You Rolled A Two", "You Rolled A Three"]    
+                            var result = Math.floor(Math.random() * numbers2.length);
+
 
                                 if(!args[1]){
                                     message.reply("What Do You Want Me To Roll I Dont Read Minds! :triumph:")
