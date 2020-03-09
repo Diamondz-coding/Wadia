@@ -10,6 +10,9 @@ const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmZxSA.nV3IOqulLp_rn8uZdVnPc1jCtLQ';
 
 var PREFIX = '?';
 
+var numbers = [1, 2, 3, 4, 5, 6, 7]
+var dice = Math.floor(Math.random() * numbers.length)
+
 bot.on('ready', () =>{
     console.log('This Bot Is Online!')
 })
@@ -46,8 +49,7 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                             case "roll":
                                 
                             
-                            var numbers = [1, 2, 3, 4, 5, 6, 7]
-                            var dice = Math.floor(Math.random() * numbers.length)
+                           
                             
                                 
 
