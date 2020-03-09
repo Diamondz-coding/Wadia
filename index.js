@@ -1,12 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
-
-
-
-
-
-const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmagLA.2XdvWS2-vaL6unONNaS4SfWMTP8';
+const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.Xmahdw.hIT3h76npAtvQSVrwGe997qKW_0';
 
 var PREFIX = '?';
 
@@ -15,54 +10,15 @@ bot.on('ready', () =>{
     console.log('This Bot Is Online!')
 })
 
-bot.on('message', message=>{ // allows bot to read any messages made by people
+bot.on('message', message=>{
     
-    let args = message.content.substring(PREFIX.length).split(' '); // defies the length of the prefix
+    let args = message.content.substring(PREFIX.length).split(' ');
     
     switch(args[0]){
 
-        // Start of 'Fun commands':
+       
 
-        case "memes":
-                        
-                    
-                    
-                        message.channel.send("My Favourite Memes!\n Number 1: Rick Roll \n Number 2: Friday \n Number 3: Doge \n Number 4: Crab Rave \n And Last But Not Least: Robbie Rotton!") * 3
-                    break;
-                    
-                    case 'CLEAR':
-                    if(!args[1]) return message.reply('Error 101; Please Specify Amount; Like This: "?clear 12" or "?clear 134" ')
-                    message.channel.bulkDelete(args[1]);
-                    
-                    break;
-                    
-                
-
-                        case 'clear':
-                            if(!args[1]) return message.reply('Error 101; Please Specify Amount; Like This: "?clear 12" or "?clear 134" ')
-                            message.channel.bulkDelete(args[1]);
-                            
-                            break;
-
-                            
-                            case "roll":
-                              
-                            var result = Math.floor(Math.random() * 8);
-
-
-                                if(!args[1]){
-                                    message.reply("What Do You Want Me To Roll I Dont Read Minds! :triumph:")
-                                
-                                }
-                                if(args[1] === "dice"){
-                                    message.reply(result)
-                                }
-                                
-break;
-                                
-                                case "hello":
-                                message.reply("Hello My Friend!")
-                                break;
-                            }
+        
+}
 })
-bot.login(process.env.token);
+bot.login(process.env.token)
