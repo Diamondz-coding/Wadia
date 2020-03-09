@@ -15,7 +15,7 @@ bot.on('ready', () =>{
     console.log('This Bot Is Online!')
 })
 
-bot.on('message', message=>{ // allows bot to read any messages amde by people
+bot.on('message', message=>{ // allows bot to read any messages made by people
     
     let args = message.content.substring(PREFIX.length).split(' '); // defies the length of the prefix
     
@@ -57,6 +57,11 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                                 if(args[1] === "dice"){
                                     message.reply(result)
                                 }
+
+                             case "about":
+                                 if(!args[1]){
+                                     message.reply("Who Do You Want To Know About?")
+                                 }   
 
                             
                                 
