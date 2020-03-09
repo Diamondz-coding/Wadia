@@ -34,6 +34,7 @@ bot.on('message', message=>{
   case "hello":
        message.reply("Hello My Friend!")
   break;
-}    }) }
+
+}    }) })
 
   bot.login(process.env.token);
