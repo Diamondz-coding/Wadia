@@ -57,49 +57,15 @@ bot.on('message', message=>{ // allows bot to read any messages made by people
                                 if(args[1] === "dice"){
                                     message.reply(result)
                                 }
-<<<<<<< HEAD
-
-                             case "about":
+case "about":
                                  if(!args[1]){
                                      message.reply("Who Do You Want To Know About?")
                                  }   
-
-                            
-=======
-                                break;
+break;
                                 
                                 case "hello":
                                 message.reply("Hello My Friend!")
                                 break;
->>>>>>> 922385e8c205de7112ea0f950c0abe0de3d58017
-                                
-                            
-                           
-                            
-                                
-
-
-                                
-                                    
-                                
-                             
-
-                        
-
-
-
-        
-        
-       
-         
-                        
-    
-    }
+                            }
 })
-
-
-
-
-
-
 bot.login(process.env.token);
