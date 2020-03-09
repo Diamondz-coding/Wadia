@@ -56,7 +56,7 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
 
                                 
                                     if(args[1] === "dice"){
-                                    message.author(dice)
+                                    message.reply(dice)
                                     }
                                     if(!args[1]){ 
                                         
