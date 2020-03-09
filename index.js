@@ -57,13 +57,7 @@ bot.on('message', message=>{ // allows bot to read any messages made by people
                                 if(args[1] === "dice"){
                                     message.reply(result)
                                 }
-case "about":
-                                 if(!args[1]){
-                                     message.reply("Who Do You Want To Know About?")
-                                 }  
-                                 if(args[1] === "wadia"){
-                                     message.channel.send("Hi, I'm Wadia! I Was Created By People Called 'Diamondz' And 'Wave' If You Would Like To Look How I Was Made; Look at: 'https://github.com/Diamondz-coding/Wadia' ! ")
-                                 } 
+                                
 break;
                                 
                                 case "hello":
