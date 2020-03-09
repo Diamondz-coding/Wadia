@@ -5,7 +5,7 @@ const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmarTQ.TurUIci06Lju-ovxz9HTB88YxbY';
 var PREFIX = '?';
 bot.on('ready', () =>{
   console.log('This Bot Is Online!')
-bot.on('message', message)=>{
+bot.on('message', message=>{
   let args = message.content.substring(PREFIX.length).split(' '); x
   switch(args[0]){
 
@@ -34,7 +34,6 @@ bot.on('message', message)=>{
   case "hello":
        message.reply("Hello My Friend!")
   break;
-}    } }
-
+}    }) }
 
   bot.login(process.env.token);
