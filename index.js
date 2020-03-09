@@ -10,8 +10,12 @@ bot.on('message', message=>{
   switch(args[0]){
 
   case 'clear':
+
   if(!args[1]) return message.reply('Error 101; Please Specify Amount; Like This: "?clear 12" or "?clear 134" ')
        message.channel.bulkDelete(args[1]);
+
+  
+
   break;
 
   case "roll":
@@ -25,10 +29,13 @@ bot.on('message', message=>{
   }
   case "about":
 
+
   if(!args[1])
   {
   message.reply("Who Do You Want To Know About?")
   }
+
+
   break;
 
   case "hello":
@@ -37,4 +44,8 @@ bot.on('message', message=>{
 
 }    }) })
 
+
+  
+
   bot.login(process.env.token);
+
