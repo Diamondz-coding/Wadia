@@ -13,6 +13,9 @@ var PREFIX = '?';
 var numbers = [1, 2, 3, 4, 5, 6, 7]
 var dice = Math.floor(Math.random() * numbers.length)
 
+var fortnite = ["craggy cliffs", "Dirty Docks", "Pleasant Park", "Retail Row", "Slurpy Swamps", "Sweaty Sands", "Salty Springs", "Lazy Lake", "Frenzy Farm", "Weeping Woods", "Misty Meadows", "Steamy Stacks", "Holly Hedges", "The Yacht", "The Rig", "The Shark", "The Grotto", "The Agency"]
+var whereshouldiland = Math.floor(Math.random() * fortnite.length);
+
 bot.on('ready', () =>{
     console.log('This Bot Is Online!')
 })
@@ -62,6 +65,9 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                                         
                                         message.reply("What Do You Want Me To Roll; I Cant Read Minds! :triumph:")
                                     }
+                                    case "fortnite":
+                                    message.channel.send("You Should Land Here:")    
+                                    message.channel.send(whereshouldiland)
                                     
                                 
                              
