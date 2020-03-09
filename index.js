@@ -49,7 +49,7 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                             
                             break;
 
-                            case "roll":
+                            
                                 
                             
                            
@@ -58,16 +58,6 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
 
 
                                 
-                                    if(args[1] === "dice"){
-                                    message.reply(dice)
-                                    }
-                                    if(!args[1]){ 
-                                        
-                                        message.reply("What Do You Want Me To Roll; I Cant Read Minds! :triumph:")
-                                    }
-                                    case "fortnite":
-                                    message.channel.send("You Should Land Here:")    
-                                    message.channel.send(whereshouldiland)
                                     
                                 
                              
