@@ -62,8 +62,11 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                                 if(args[1] === "dice"){
                                     message.reply(result)
                                 }
-
-                            
+                                break;
+                                
+                                case "hello":
+                                message.reply("Hello My Friend!")
+                                break;
                                 
                             
                            
