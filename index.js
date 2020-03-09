@@ -10,11 +10,6 @@ const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmZxSA.nV3IOqulLp_rn8uZdVnPc1jCtLQ';
 
 var PREFIX = '?';
 
-var numbers = [1, 2, 3, 4, 5, 6, 7]
-var dice = Math.floor(Math.random() * numbers.length)
-
-var fortnite = ["Craggy Cliffs", "Dirty Docks", "Pleasant Park", "Retail Row", "Slurpy Swamps", "Sweaty Sands", "Salty Springs", "Lazy Lake", "Frenzy Farm", "Weeping Woods", "Misty Meadows", "Steamy Stacks", "Holly Hedges", "The Yacht", "The Rig", "The Shark", "The Grotto", "The Agency"]
-var whereshouldiland = Math.floor(Math.random() * fortnite.length);
 
 bot.on('ready', () =>{
     console.log('This Bot Is Online!')
