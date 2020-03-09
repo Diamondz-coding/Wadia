@@ -13,7 +13,7 @@ var PREFIX = '?';
 var numbers = [1, 2, 3, 4, 5, 6, 7]
 var dice = Math.floor(Math.random() * numbers.length)
 
-var fortnite = ["craggy cliffs", "Dirty Docks", "Pleasant Park", "Retail Row", "Slurpy Swamps", "Sweaty Sands", "Salty Springs", "Lazy Lake", "Frenzy Farm", "Weeping Woods", "Misty Meadows", "Steamy Stacks", "Holly Hedges", "The Yacht", "The Rig", "The Shark", "The Grotto", "The Agency"]
+var fortnite = ["Craggy Cliffs", "Dirty Docks", "Pleasant Park", "Retail Row", "Slurpy Swamps", "Sweaty Sands", "Salty Springs", "Lazy Lake", "Frenzy Farm", "Weeping Woods", "Misty Meadows", "Steamy Stacks", "Holly Hedges", "The Yacht", "The Rig", "The Shark", "The Grotto", "The Agency"]
 var whereshouldiland = Math.floor(Math.random() * fortnite.length);
 
 bot.on('ready', () =>{
@@ -48,6 +48,17 @@ bot.on('message', message=>{ // allows bot to read any messages amde by people
                             message.channel.bulkDelete(args[1]);
                             
                             break;
+
+                            var result = (numbers) (Math.random() * 8)
+
+                            case "roll":
+                                if(!args[1]){
+                                    message.reply("What Do You Want Me To Roll I Dont Read Minds! :triumph:")
+                                
+                                }
+                                if(args[1] === "dice"){
+                                    message.reply(result)
+                                }
 
                             
                                 
