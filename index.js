@@ -15,6 +15,8 @@ bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(' ');
     
     switch(args[0]){
+        case 'hello':
+            message.author.send("What Up Mah Nigga!")
 
        
 
