@@ -6,7 +6,7 @@ var PREFIX = '?';
 bot.on('ready', () =>{
   console.log('This Bot Is Online!')
 bot.on('message', message=>{
-  let args = message.content.substring(PREFIX.length).split(' '); x
+  let args = message.content.substring(PREFIX.length).split(' '); 
   switch(args[0]){
 
   case 'clear':
@@ -14,7 +14,7 @@ bot.on('message', message=>{
   if(!args[1]) return message.reply('Error 101; Please Specify Amount; Like This: "?clear 12" or "?clear 134" ')
        message.channel.bulkDelete(args[1]);
 
-  
+
 
   break;
 
@@ -45,7 +45,6 @@ bot.on('message', message=>{
 }    }) })
 
 
-  
+
 
   bot.login(process.env.token);
-
